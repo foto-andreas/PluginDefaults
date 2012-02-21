@@ -11,15 +11,28 @@
 #
 # This creates a folder PluginDefaults.
 #
+# Get the AfterShot Pro SDK an unpack it into your <workspace>. Rename
+# it to get rid of the version information and to use the latest version
+# into "SDK". You may also create a link instead of the rename if you
+# OS allows such things.
+#
 # Create a directory for you plugin (we name it "<myPlugin>" here):
 #
 # mkdir <myPlugin>
 #
-# Copy this file into <myPlugin> under the name <myPlugin>.pro
+# Copy this file into <myPlugin> under the name <myPlugin>.pro and
+# delete these ugly readme header lines.
 #
 # Optionally edit the HEADERS, SOURCES, RESOURCES, OTHER_FILES, FORMS.
 #
-# Open it in QtCreator and add files etc.
+# Your directory structure should be as follows:
+# <workspace>/SDK                   (link to the SDK dir)
+# <workspace>/SDK/Plugin            (directory in the SDK distribution)
+# <workspace>/PluginDefaults              (project defaults)
+# <workspace>/<myPlugin>                  (your plugin source folder)
+# <workspace>/<myPlugin>/<myPlugin>.pro   (your plugin  project file)
+#
+# Open <myPlugin>.pro in QtCreator and add files etc.
 #
 ######################################################################
 
