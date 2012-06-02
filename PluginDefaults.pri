@@ -19,8 +19,8 @@ DEPENDPATH += . locale
 INCLUDEPATH += .
 
 # we are including the ASP SDK headers from various locations where they may be
-DEPENDPATH += ../Plugin ../SDK/Plugin ../SDK
-INCLUDEPATH += ../Plugin ../SDK/Plugin ../SDK
+DEPENDPATH += ../Plugin ../SDK/Plugin ../SDK ../PluginTools
+INCLUDEPATH += ../Plugin ../SDK/Plugin ../SDK ../PluginTools
 
 # we are building a release
 CONFIG(release) {
