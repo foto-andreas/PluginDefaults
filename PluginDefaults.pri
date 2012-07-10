@@ -33,6 +33,16 @@ CONFIG(release) {
     UI_SOURCES_DIR = build/objects/release/uisrc
 }
 
+#CONFIG(debug) {
+#    message( debug )
+#    UI_DIR		=	build/objects/debug/ui
+#    MOC_DIR		=	build/objects/debug/moc
+#    OBJECTS_DIR	=	build/objects/debug/obj
+#    RCC_DIR	    =	build/objects/debug/rcc
+#    UI_HEADERS_DIR = build/objects/debug/uih
+#    UI_SOURCES_DIR = build/objects/debug/uisrc
+#}
+
 include( mac.pri )
 
 include( unix.pri )
