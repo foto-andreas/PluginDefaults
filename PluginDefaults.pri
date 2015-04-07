@@ -8,6 +8,7 @@ TEMPLATE = lib
 # Include default Qt libraries
 QT += core
 QT += gui
+QT += widgets
 
 # This is used in the source
 DEFINES += TARGET_VERSION=$$VERSION
@@ -45,7 +46,7 @@ CONFIG(release) {
 
 include( mac.pri )
 
-include( unix.pri )
+include( unix64.pri )
 
 include( win.pri)
 

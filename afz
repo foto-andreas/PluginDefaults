@@ -12,8 +12,10 @@ VERSION="$2"
 IDENTIFIER="$3"
 AUTHOR="$4"
 SITE="$5"
+BITS="$6"
+BITS=${BITS:-32bit}
 
-shift 5
+shift 6
 
 MAV=${VERSION%%.*}
 RST=${VERSION#*.}
@@ -76,6 +78,6 @@ while [ -n "$1" ]; do
   shift
 done
 
-zip -r "$NAME-$VERSION-$EXT.afzplug" "$PDIR"
+zip -r "$NAME-$VERSION-$EXT-$BITS.afzplug" "$PDIR"
 
-echo "build: $NAME-$VERSION-$EXT.afzplug"
+echo "build: $NAME-$VERSION-$EXT-$BITS.afzplug"
