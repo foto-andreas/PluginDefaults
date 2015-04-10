@@ -49,12 +49,3 @@ include( mac.pri )
 include( unix64.pri )
 
 include( win.pri)
-
-
-
-
-
-
-
-
-
